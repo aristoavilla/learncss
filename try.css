@@ -12,7 +12,7 @@
   border-color: #404a44;
   display: flex;
   /* flex-direction: column; */
-  flex-wrap: wrap;
+  flex-wrap: wra.conp;
 }
 
 .container > div {
@@ -35,3 +35,22 @@
 .container :nth-last-child(1) {
   flex-shrink: 2;
 } */
+
+main {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  border: 5px solid black;
+  display: flex;
+}
+
+main .sidebar {
+  background-color: #404a44;
+  flex: 1 2 300px;
+  /* flex grow, flex shrink, flex basis */
+}
+
+main .content {
+  background-color: #5f6f65;
+  flex: 2 1 500px;
+}
